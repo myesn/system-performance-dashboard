@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 interface Props {
   max: number;
   value: number;
+  unitOfValue: string;
   min: number;
   gaugePrimaryColor: string;
   gaugeSecondaryColor: string;
@@ -13,6 +14,7 @@ export default function AnimatedCircularProgressBar({
   max = 100,
   min = 0,
   value = 0,
+  unitOfValue = '%',
   gaugePrimaryColor,
   gaugeSecondaryColor,
   className,
@@ -101,7 +103,7 @@ export default function AnimatedCircularProgressBar({
         data-current-value={currentPercent}
         className="duration-[var(--transition-length)] delay-[var(--delay)] absolute inset-0 m-auto size-fit ease-linear animate-in fade-in"
       >
-        {currentPercent}
+        {currentPercent} {unitOfValue}
       </span>
     </div>
   );
