@@ -1,5 +1,7 @@
 import si, { Systeminformation } from 'systeminformation'
 
+export const dynamic = 'force-dynamic'
+
 // Get current time and OS uptime
 export async function GET() {
   // https://systeminformation.io/general.html
