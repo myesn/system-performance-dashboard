@@ -5,5 +5,12 @@ export async function GET(request: Request) {
   // https://systeminformation.io/general.html
   // currentLoad: 当前负载百分比值
   const { currentLoad } = await si.currentLoad()
-  return Response.json({ currentLoad: Math.ceil(currentLoad) })
+  const result: CpuCurrentLoadResponse = {
+    currentLoad: Math.ceil(currentLoad)
+  }
+  return Response.json(result)
+}
+
+interface CpuCurrentLoadResponse {
+  currentLoad: number
 }
