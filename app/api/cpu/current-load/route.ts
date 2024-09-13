@@ -11,6 +11,6 @@ export async function GET(request: Request) {
   return Response.json(result)
 }
 
-interface CpuCurrentLoadResponse {
+export interface CpuCurrentLoadResponse {
   currentLoad: number
 }
