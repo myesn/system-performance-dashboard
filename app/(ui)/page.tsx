@@ -1,4 +1,4 @@
-import { OsinfoTimeContainer } from '@/components/systeminformation/osinfo/time'
+import { OsinfoTimeContainer } from '@/components/system-information/osinfo/time'
 
 export default function Home() {
   return (
