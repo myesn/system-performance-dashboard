@@ -1,10 +1,10 @@
 'use client'
 
-import type { Systeminformation } from 'systeminformation'
 import { cn } from '@/lib/utils'
 import { formatTimestamp, formatUptime } from '@/lib/time-format'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { useOsinfoTime } from './use-osinfo-time'
+import { OsinfoTimeResponse } from '@/app/api/osinfo/time/route'
 
 export function OsinfoTimeContainer() {
   const { time, isLoading, isError } = useOsinfoTime()
@@ -49,4 +49,4 @@ interface ItemProps {
   className?: string
 }
 
-interface OsinfoTimeProps extends Systeminformation.TimeData {}
+interface OsinfoTimeProps extends OsinfoTimeResponse {}
