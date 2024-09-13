@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 interface Props {
   max: number;
   value: number;
-  unitOfValue: string;
+  unitOfValue?: string;
   min: number;
   gaugePrimaryColor: string;
   gaugeSecondaryColor: string;
