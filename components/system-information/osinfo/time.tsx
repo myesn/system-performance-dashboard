@@ -2,7 +2,7 @@
 
 import { cn } from '@/lib/utils'
 import { formatTimestamp, formatUptime } from '@/lib/time-format'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { useOsinfoTime } from './use-osinfo-time'
 import { OsinfoTimeResponse } from '@/app/api/osinfo/time/route'
 
