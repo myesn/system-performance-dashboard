@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.1.1](https://github.com/myesn/system-performance-dashboard/compare/v1.1.0...v1.1.1) (2024-09-14)
+
+
+### Features
+
+* 优化 memory-mem 组件显示效果 ([7660742](https://github.com/myesn/system-performance-dashboard/commit/76607425eec6bf496868a635dd2021939a22d536))
+* 优化 network-stats 组件显示效果 ([718caf0](https://github.com/myesn/system-performance-dashboard/commit/718caf0aca944a55958156c746e9298476cad5e6))
+
 ## [1.1.0](https://github.com/myesn/system-performance-dashboard/compare/v1.0.0...v1.1.0) (2024-09-14)
 
 
