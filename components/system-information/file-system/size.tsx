@@ -7,10 +7,10 @@ import type { FileSystemSizeResponse } from '@/app/api/file-system/size/route'
 import { Progress } from '@/components/ui/progress'
 
 export function FileSystemSizeContainer() {
-  const { fsSizes, isLoading, isError } = useFileSystemSize()
+  const { fsSizes, isLoading, error } = useFileSystemSize()
 
   if (isLoading) return <div>刷新中..</div>
-  if (isError) return <div>请求失败</div>
+  if (error) return <div>{error.message}</div>
   if (!fsSizes) return <div>数据解析失败</div>
 
   return <FileSystemSize fsSizes={fsSizes} />

@@ -6,10 +6,10 @@ import { useCpuCurrentLoad } from './use-cpu-current-load'
 import type { CpuCurrentLoadResponse } from '@/app/api/cpu/current-load/route'
 
 export function CpuCurrentLoadContainer() {
-  const { currentLoad, isLoading, isError } = useCpuCurrentLoad()
+  const { currentLoad, isLoading, error } = useCpuCurrentLoad()
 
   if (isLoading) return <div>刷新中..</div>
-  if (isError) return <div>请求失败</div>
+  if (error) return <div>{error.message}</div>
   if (!currentLoad) return <div>数据解析失败</div>
 
   return <CpuCurrentLoad {...currentLoad} />

@@ -8,6 +8,6 @@ export function useOsinfoTime() {
   return {
     time: data,
     isLoading,
-    isError: error,
+    error,
   }
 }

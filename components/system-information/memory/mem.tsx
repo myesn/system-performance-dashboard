@@ -7,10 +7,10 @@ import { useMemoryMem } from './use-memory-mem'
 import type { MemoryMemResponse } from '@/app/api/memory/mem/route'
 
 export function MemoryMemContainer() {
-  const { mem, isLoading, isError } = useMemoryMem()
+  const { mem, isLoading, error } = useMemoryMem()
 
   if (isLoading) return <div>刷新中..</div>
-  if (isError) return <div>请求失败</div>
+  if (error) return <div>{error.message}</div>
   if (!mem) return <div>数据解析失败</div>
 
   return <MemoryMem {...mem} />

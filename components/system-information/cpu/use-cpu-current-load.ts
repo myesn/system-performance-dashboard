@@ -8,6 +8,6 @@ export function useCpuCurrentLoad() {
   return {
     currentLoad: data,
     isLoading,
-    isError: error,
+    error,
   }
 }

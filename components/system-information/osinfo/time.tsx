@@ -7,10 +7,10 @@ import { useOsinfoTime } from './use-osinfo-time'
 import { OsinfoTimeResponse } from '@/app/api/osinfo/time/route'
 
 export function OsinfoTimeContainer() {
-  const { time, isLoading, isError } = useOsinfoTime()
+  const { time, isLoading, error } = useOsinfoTime()
 
   if (isLoading) return <div>刷新中..</div>
-  if (isError) return <div>请求失败</div>
+  if (error) return <div>{error.message}</div>
   if (!time) return <div>数据解析失败</div>
 
   return <OsinfoTime {...time} />

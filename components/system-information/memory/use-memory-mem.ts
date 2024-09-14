@@ -8,6 +8,6 @@ export function useMemoryMem() {
   return {
     mem: data,
     isLoading,
-    isError: error,
+    error,
   }
 }

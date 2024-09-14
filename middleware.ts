@@ -27,7 +27,7 @@ export function middleware(request: NextRequest) {
   }
 
   if (ipData.count >= limit) {
-    return NextResponse.json({ error: '请求太频繁，请 1 分钟后再试' }, { status: 429 })
+    return NextResponse.json({ message: '请求太频繁，请 1 分钟后再试' }, { status: 429 })
   }
 
   ipData.count += 1

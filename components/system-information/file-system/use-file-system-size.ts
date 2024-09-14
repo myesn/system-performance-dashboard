@@ -8,6 +8,6 @@ export function useFileSystemSize() {
   return {
     fsSizes: data,
     isLoading,
-    isError: error,
+    error,
   }
 }

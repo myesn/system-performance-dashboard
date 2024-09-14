@@ -8,6 +8,6 @@ export function useNetworkStats() {
   return {
     networkStats: data,
     isLoading,
-    isError: error,
+    error,
   }
 }

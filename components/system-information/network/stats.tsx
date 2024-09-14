@@ -7,10 +7,10 @@ import { useNetworkStats } from './use-network-stats'
 import type { NetworkStatsResponse } from '@/app/api/network/stats/route'
 
 export function NetworkStatsContainer() {
-  const { networkStats, isLoading, isError } = useNetworkStats()
+  const { networkStats, isLoading, error } = useNetworkStats()
 
   if (isLoading) return <div>刷新中..</div>
-  if (isError) return <div>请求失败</div>
+  if (error) return <div>{error.message}</div>
   if (!networkStats) return <div>数据解析失败</div>
 
   return <NetworkStats {...networkStats} />
