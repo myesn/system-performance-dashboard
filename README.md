@@ -1,3 +1,10 @@
+一个足够简洁的服务器性能展示面板（*仅展示当前状态*）
+
+![image](https://github.com/user-attachments/assets/9cbb7b10-9006-40a4-be65-8bc40b495ae1)
+
+![image](https://github.com/user-attachments/assets/c49e92f1-27ee-43e2-9300-4117af83dc96)
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
