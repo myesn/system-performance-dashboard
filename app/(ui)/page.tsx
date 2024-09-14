@@ -6,9 +6,9 @@ import { OsinfoTimeContainer } from '@/components/system-information/osinfo/time
 
 export default function Home() {
   return (
-    <div className="pt-6 px-4">
+    <div className="pt-6 px-4 space-y-3">
       <OsinfoTimeContainer />
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-4 gap-4">
         <CpuCurrentLoadContainer />
         <MemoryMemContainer />
         <NetworkStatsContainer />
