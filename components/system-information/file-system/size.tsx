@@ -1,7 +1,6 @@
 'use client'
 
 import prettyBytes from 'pretty-bytes'
-import { cn } from '@/lib/utils'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { useFileSystemSize } from './use-file-system-size'
 import type { FileSystemSizeResponse } from '@/app/api/file-system/size/route'
