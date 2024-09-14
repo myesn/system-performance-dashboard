@@ -1,6 +1,6 @@
 import useSWR from 'swr'
 import { fetcher } from '@/lib/fetcher'
-import { MemoryMemResponse } from '@/app/api/memory/mem/route'
+import type { MemoryMemResponse } from '@/app/api/memory/mem/route'
 
 export function useMemoryMem() {
   const { data, error, isLoading } = useSWR<MemoryMemResponse, Error>('/api/memory/mem', fetcher)
