@@ -21,7 +21,7 @@ function CpuCurrentLoad({ currentLoad }: CpuCurrentLoadProps) {
       <CardHeader>
         <CardTitle>CPU 利用率</CardTitle>
       </CardHeader>
-      <CardContent>
+      <CardContent className='flex justify-center'>
         <AnimatedCircularProgressBar
           max={100}
           min={0}
