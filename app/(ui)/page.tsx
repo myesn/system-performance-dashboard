@@ -8,9 +8,9 @@ import { OsinfoTimeContainer } from '@/components/system-information/osinfo/time
 export default function Home() {
   return (
     <div className="pt-6 px-4 space-y-3">
-      <ModeToggle className='absolute right-[16px] top-[36px]' />
+      <ModeToggle className="absolute right-[16px] top-[36px]" />
       <OsinfoTimeContainer />
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-4">
         <CpuCurrentLoadContainer />
         <MemoryMemContainer />
         <NetworkStatsContainer />
