@@ -4,6 +4,7 @@ export const dynamic = 'force-dynamic'
 
 // Network Stats
 export async function GET() {
+  // https://systeminformation.io/network.html
   const networkInterfaceDefault = await si.networkInterfaceDefault()
   const [{ rx_bytes, tx_bytes, rx_sec, tx_sec }] = await si.networkStats(networkInterfaceDefault)
   const result: NetworkStatsResponse = {
@@ -11,6 +12,7 @@ export async function GET() {
     networkStats: {
       rx_bytes,
       tx_bytes,
+      // 从第二次调用开始，才能获得每秒的网络传输值
       rx_sec: rx_sec ?? 0,
       tx_sec: tx_sec ?? 0,
     },
