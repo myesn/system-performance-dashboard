@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.2.0](https://github.com/myesn/system-performance-dashboard/compare/v1.1.1...v1.2.0) (2024-09-14)
+
+
+### Features
+
+* 添加中间件限制 API 请求速率 ([6139f02](https://github.com/myesn/system-performance-dashboard/commit/6139f0250be330386ed9dbed8030fa0b96838a0f))
+
+
+### Bug Fixes
+
+* 本地不限制速率请求 ([09bf4fc](https://github.com/myesn/system-performance-dashboard/commit/09bf4fcb64e4257b1bb3c038b846baab8af72692))
+* 接口报错后 ui 组件无法正常展示 ([2520f08](https://github.com/myesn/system-performance-dashboard/commit/2520f08339db6c9b0df9825203b0750701e1d10b))
+
 ## [1.1.1](https://github.com/myesn/system-performance-dashboard/compare/v1.1.0...v1.1.1) (2024-09-14)
 
 
