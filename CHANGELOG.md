@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.1.0](https://github.com/myesn/system-performance-dashboard/compare/v1.0.0...v1.1.0) (2024-09-14)
+
+
+### Features
+
+* 添加适用于手机端的 viewport ([780929d](https://github.com/myesn/system-performance-dashboard/commit/780929d2b8b4f1d1dc50bbcb73206c3ba4f243f6))
+* 完成 osinfo-time 组件样式响应式 ([b30998f](https://github.com/myesn/system-performance-dashboard/commit/b30998fd4dd493775c3fe9fdcda92075af6f0422))
+* 页面响应式样式 ([bd7d59f](https://github.com/myesn/system-performance-dashboard/commit/bd7d59f971b84a0459d97420390b173ba00db2ab))
+* memory-mem 组件响应式样式 ([a01db81](https://github.com/myesn/system-performance-dashboard/commit/a01db81d5e15985ee7cb1c94040e114d14461032))
+* network-stats 组件响应式样式 ([66d74cc](https://github.com/myesn/system-performance-dashboard/commit/66d74cc16f8e31fbd033a5f3b384a41d7711da02))
+
 ## 1.0.0 (2024-09-14)
 
 
