@@ -22,9 +22,9 @@ function NetworkStats({ networkInterfaceDefault, networkStats }: NetworkStatsPro
       <CardHeader>
         <CardTitle>网络流量</CardTitle>
       </CardHeader>
-      <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-2">
+      <CardContent className="grid grid-cols-2 lg:grid-cols-4 gap-2">
         {/* className="col-span-2" */}
-        <Item name="网卡名称" value={networkInterfaceDefault} className="col-span-1 md:col-span-2" />
+        <Item name="网卡名称" value={networkInterfaceDefault} className="col-span-2 lg:col-span-4" />
         <Item name="上传" value={prettyBytes(networkStats.tx_sec) + '/s'} />
         <Item name="下载" value={prettyBytes(networkStats.rx_sec) + '/s'} />
         <Item name="上传总量" value={prettyBytes(networkStats.tx_bytes)} />
