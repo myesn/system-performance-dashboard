@@ -11,8 +11,8 @@ export async function GET() {
     networkStats: {
       rx_bytes,
       tx_bytes,
-      rx_sec,
-      tx_sec,
+      rx_sec: rx_sec ?? 0,
+      tx_sec: tx_sec ?? 0,
     },
   }
 
