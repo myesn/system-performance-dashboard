@@ -23,7 +23,7 @@ function OsinfoTime(props: OsinfoTimeProps) {
         <CardTitle>服务器时间</CardTitle>
         {/* <CardDescription>服务器当前时间 & 服务器正常运行时间</CardDescription> */}
       </CardHeader>
-      <CardContent className="grid grid-cols-4 gap-2">
+      <CardContent className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
         {/* className="col-span-2" */}
         <Item name="当前时间" value={formatTimestamp(props.current)} />
         <Item name="正常运行时间" value={formatUptime(props.uptime)} />
