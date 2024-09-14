@@ -22,7 +22,7 @@ function FileSystemSize({ fsSizes }: FileSystemSizeProps) {
       <CardHeader>
         <CardTitle>磁盘使用情况</CardTitle>
       </CardHeader>
-      <CardContent className="space-y-3">
+      <CardContent className="space-y-6">
         {fsSizes.map((fsSize) => {
           return <Item key={fsSize.fs} {...fsSize} />
         })}
