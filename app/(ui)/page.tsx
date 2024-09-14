@@ -1,4 +1,5 @@
 import { CpuCurrentLoadContainer } from '@/components/system-information/cpu/current-load'
+import { FileSystemSizeContainer } from '@/components/system-information/file-system/size'
 import { MemoryMemContainer } from '@/components/system-information/memory/mem'
 import { NetworkStatsContainer } from '@/components/system-information/network/stats'
 import { OsinfoTimeContainer } from '@/components/system-information/osinfo/time'
@@ -11,6 +12,7 @@ export default function Home() {
         <CpuCurrentLoadContainer />
         <MemoryMemContainer />
         <NetworkStatsContainer />
+        <FileSystemSizeContainer />
       </div>
     </div>
   )
