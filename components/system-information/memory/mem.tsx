@@ -22,9 +22,9 @@ function MemoryMem(props: MemoryMemProps) {
       <CardHeader>
         <CardTitle>内存占用率</CardTitle>
       </CardHeader>
-      <CardContent className="grid grid-cols-1 lg:grid-cols-3 gap-2">
+      <CardContent className="grid grid-cols-2 md:grid-cols-3 gap-2">
         {/* className="col-span-2" */}
-        <Item name="总共可用" value={prettyBytes(props.total)} />
+        <Item name="总共可用" value={prettyBytes(props.total)} className="col-span-2 md:col-span-1" />
         <Item name="空闲" value={prettyBytes(props.free)} />
         <Item name="已用" value={prettyBytes(props.used)} />
       </CardContent>
