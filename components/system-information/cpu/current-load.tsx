@@ -1,5 +1,6 @@
 'use client'
 
+import { Cpu } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import AnimatedCircularProgressBar from '@/components/magicui/animated-circular-progress-bar'
 import { useCpuCurrentLoad } from './use-cpu-current-load'
@@ -19,9 +20,12 @@ function CpuCurrentLoad({ currentLoad }: CpuCurrentLoadProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>CPU 利用率</CardTitle>
+        <CardTitle className="flex items-center space-x-1">
+          <span>CPU 利用率</span>
+          <Cpu className="h-4 w-4 text-muted-foreground" />
+        </CardTitle>
       </CardHeader>
-      <CardContent className='flex justify-center'>
+      <CardContent className="flex justify-center">
         <AnimatedCircularProgressBar
           max={100}
           min={0}
