@@ -1,5 +1,6 @@
 'use client'
 
+import { Clock4 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { formatTimestamp, formatUptime } from '@/lib/time-format'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -20,7 +21,10 @@ function OsinfoTime(props: OsinfoTimeProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>服务器时间</CardTitle>
+        <CardTitle className="flex items-center space-x-1">
+          <span>服务器时间</span>
+          <Clock4 className='h-4 w-4 text-muted-foreground' />
+        </CardTitle>
         {/* <CardDescription>服务器当前时间 & 服务器正常运行时间</CardDescription> */}
       </CardHeader>
       <CardContent className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
