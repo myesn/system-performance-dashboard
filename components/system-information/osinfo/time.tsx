@@ -23,7 +23,7 @@ function OsinfoTime(props: OsinfoTimeProps) {
       <CardHeader>
         <CardTitle className="flex items-center space-x-1">
           <span>服务器时间</span>
-          <Clock4 className='h-4 w-4 text-muted-foreground' />
+          <Clock4 className="h-4 w-4 text-muted-foreground" />
         </CardTitle>
         {/* <CardDescription>服务器当前时间 & 服务器正常运行时间</CardDescription> */}
       </CardHeader>
