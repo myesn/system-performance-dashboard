@@ -1,6 +1,7 @@
 'use client'
 
 import prettyBytes from 'pretty-bytes'
+import { MemoryStick } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { useMemoryMem } from './use-memory-mem'
@@ -20,7 +21,10 @@ function MemoryMem(props: MemoryMemProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>内存占用率</CardTitle>
+        <CardTitle className="flex items-center space-x-1">
+          <span>内存占用率</span>
+          <MemoryStick className="h-4 w-4 text-muted-foreground" />
+        </CardTitle>
       </CardHeader>
       <CardContent className="grid grid-cols-2 lg:grid-cols-3 gap-2">
         {/* className="col-span-2" */}
