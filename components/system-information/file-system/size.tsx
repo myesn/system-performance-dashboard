@@ -1,6 +1,7 @@
 'use client'
 
 import prettyBytes from 'pretty-bytes'
+import { HardDrive } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { useFileSystemSize } from './use-file-system-size'
 import { Progress } from '@/components/ui/progress'
@@ -20,7 +21,10 @@ function FileSystemSize({ fsSizes }: FileSystemSizeProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>磁盘使用情况</CardTitle>
+        <CardTitle className="flex items-center space-x-1">
+          <span>磁盘使用情况</span>
+          <HardDrive className="h-4 w-4 text-muted-foreground" />
+        </CardTitle>
       </CardHeader>
       <CardContent className="space-y-6">
         {fsSizes.map((fsSize) => {
