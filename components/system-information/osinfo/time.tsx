@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils'
 import { formatTimestamp, formatUptime } from '@/lib/time-format'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { useOsinfoTime } from './use-osinfo-time'
-import { OsinfoTimeResponse } from '@/app/api/osinfo/time/route'
+import type { OsinfoTimeResponse } from '@/app/api/osinfo/time/route'
 
 export function OsinfoTimeContainer() {
   const { time, isLoading, error } = useOsinfoTime()
