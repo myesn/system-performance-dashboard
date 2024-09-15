@@ -21,7 +21,7 @@ function OsinfoTime(props: OsinfoTimeProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="flex items-center space-x-1">
+        <CardTitle className="flex items-center space-x-3">
           <span>服务器时间</span>
           <Clock4 className="h-4 w-4 text-muted-foreground" />
         </CardTitle>

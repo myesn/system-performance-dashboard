@@ -20,7 +20,7 @@ function CpuCurrentLoad({ currentLoad }: CpuCurrentLoadProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="flex items-center space-x-1">
+        <CardTitle className="flex items-center space-x-3">
           <span>CPU 利用率</span>
           <Cpu className="h-4 w-4 text-muted-foreground" />
         </CardTitle>

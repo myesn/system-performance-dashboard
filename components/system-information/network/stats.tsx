@@ -24,7 +24,7 @@ function NetworkStats({ networkInterfaceDefault, networkStats }: NetworkStatsPro
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="flex items-center space-x-1">
+        <CardTitle className="flex items-center space-x-3">
           <span>网络流量</span>
           <Network className="h-4 w-4 text-muted-foreground" />
         </CardTitle>

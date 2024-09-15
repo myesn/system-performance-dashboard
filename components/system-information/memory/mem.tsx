@@ -21,7 +21,7 @@ function MemoryMem(props: MemoryMemProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="flex items-center space-x-1">
+        <CardTitle className="flex items-center space-x-3">
           <span>内存占用率</span>
           <MemoryStick className="h-4 w-4 text-muted-foreground" />
         </CardTitle>

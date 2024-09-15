@@ -21,7 +21,7 @@ function FileSystemSize({ fsSizes }: FileSystemSizeProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="flex items-center space-x-1">
+        <CardTitle className="flex items-center space-x-3">
           <span>磁盘使用情况</span>
           <HardDrive className="h-4 w-4 text-muted-foreground" />
         </CardTitle>
