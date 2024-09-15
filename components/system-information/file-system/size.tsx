@@ -3,8 +3,8 @@
 import prettyBytes from 'pretty-bytes'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { useFileSystemSize } from './use-file-system-size'
-import type { FileSystemSizeResponse } from '@/app/api/file-system/size/route'
 import { Progress } from '@/components/ui/progress'
+import type { FileSystemSizeResponse } from '@/app/api/file-system/size/route'
 
 export function FileSystemSizeContainer() {
   const { fsSizes, isLoading, error } = useFileSystemSize()
