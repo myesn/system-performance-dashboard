@@ -1,6 +1,6 @@
 一个足够简洁的服务器性能展示面板。（*仅展示当前状态*）
 
-![image](/docs/assets/screenshot.svg)
+![image](/docs/assets/screenshot.png)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
